@@ -1,0 +1,16 @@
+{
+  "name": "03-first-threejs-project",
+  "version": "1.0.0",
+  "description": "first 3js project",
+  "main": "index.js",
+  "author": "james",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "three": "^0.160.0",
+    "vite": "^5.0.11"
+  }
+}
