@@ -30,24 +30,24 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(sizes.width, sizes.height);
 
-const clock = new THREE.Clock();
+// const clock = new THREE.Clock();
+
+// gsap
+gsap.to(mesh.position, { duration: 1, delay: 1, x: 2 });
+gsap.to(mesh.position, { duration: 1, delay: 2, x: 0 });
 
 // Animation
 const tick = () => {
   // clock
-  const elapsedTime = clock.getElapsedTime();
+  //   const elapsedTime = clock.getElapsedTime();
   //  Update Objects
-  mesh.rotation.y = elapsedTime;
-
+  //   mesh.rotation.y = elapsedTime;
   //   camera.position.x = Math.sin(elapsedTime);
   //   camera.position.y = Math.cos(elapsedTime);
-
   //   mesh.rotation.x = Math.sin(elapsedTime);
   //   mesh.rotation.y = Math.cos(elapsedTime);
-
   //   render
   renderer.render(scene, camera);
-
   window.requestAnimationFrame(tick);
 };
 
